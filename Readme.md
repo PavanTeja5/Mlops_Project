@@ -30,3 +30,20 @@ git remote add origin https://github.com/PavanTeja5/Mlops_Project.git
 git branch -M main
 
 git push -u origin main 
+
+tox command
+
+tox
+
+for rebuilding -
+
+tox -r
+
+pytest -v
+
+setup commands -
+pip install -e .
+
+build your own package command-
+python setup.py sdist bdist_wheel
+
