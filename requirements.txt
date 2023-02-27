@@ -4,4 +4,5 @@ scikit-learn
 pandas
 pytest
 tox
--e . #local package install
+-e .
+flake8==5.0.4
