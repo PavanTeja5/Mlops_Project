@@ -6,3 +6,5 @@ pytest
 tox
 -e .
 flake8==5.0.4
+flask
+gunicorn
