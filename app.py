@@ -44,12 +44,8 @@ def index():
         try:
             if request.form:
                 data = dict(request.form).values()
-                print(data)
-                # data = [list(map(float, data))]
                 data = [[float(n[0]) for n in list(data)]]
-                print(data)
                 response = predict(data)
-                print(response)
                 return render_template("index.html", response=response)
 
             elif request.json:
