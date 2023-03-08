@@ -41,5 +41,5 @@ jobs:
         RENDER_APP_NAME: ${{ secrets.RENDER_APP_NAME }}
       if: github.ref == 'refs/heads/main' && job.status == 'success'
       run: |
-        git remote add render https://heroku:$RENDER_API_TOKEN@git.render.com/$RENDER_APP_NAME.git
+        git remote add render https://render.com/deploy?repo=https://github.com/PavanTeja5/Mlops_Project
         git push heroku HEAD:main -fSS
