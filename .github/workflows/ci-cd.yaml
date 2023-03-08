@@ -42,4 +42,4 @@ jobs:
       if: github.ref == 'refs/heads/main' && job.status == 'success'
       run: |
         git remote add render https://render.com/deploy?repo=https://github.com/PavanTeja5/Mlops_Project
-        git push heroku HEAD:main -fSS
+        git push render HEAD:main -fSS
