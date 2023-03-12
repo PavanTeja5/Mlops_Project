@@ -70,7 +70,7 @@ def form_response(dict_request):
     # print(dict_request)
     if validate_input(dict_request):
         data = dict_request.values()
-        # print(data)
+
         data = [[float(n[0][0]) for n in list(data)]]
         response = predict(data)
         return response
