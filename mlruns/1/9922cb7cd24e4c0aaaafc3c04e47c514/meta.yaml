@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/1/9922cb7cd24e4c0aaaafc3c04e47c514/artifacts
+end_time: 1680461908609
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 9922cb7cd24e4c0aaaafc3c04e47c514
+run_uuid: 9922cb7cd24e4c0aaaafc3c04e47c514
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1680461901975
+status: 4
+tags: []
+user_id: suren
