@@ -30,7 +30,7 @@ def index():
             # error = {"error": "Something went wrong!! Try again"}
             error = {"error": e}
             
-            return render_template("404.html", error=e)
+            return render_template("404.html", error=error)
         pass
     else:
         return render_template("index.html")
