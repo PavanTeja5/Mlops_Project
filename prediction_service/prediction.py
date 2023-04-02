@@ -66,12 +66,15 @@ def validate_input(dict_request):
 
 
 def form_response(dict_request):
-    dict_request = {key:value[0] for key, value in dict_request.items()}
+   
+ # dict_request = {key:value[0] for key, value in dict_request.items()}
+    dict_request = {key:value for key, value in dict_request.items()}
     # print(dict_request)
     if validate_input(dict_request):
         data = dict_request.values()
         # print(data)
-        data = [[float(n[0][0]) for n in list(data)]]
+        data = [[float(n) for n in list(data)]]
+        # data = [[float(n[0][0]) for n in list(data)]]
         response = predict(data)
         return response
 
